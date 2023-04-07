@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nishant - Personal Portfolio Website</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="port_logo.jpeg" alt="logo image" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fresher</p>
+                <h1>
+                    Hi, I'm <span>NISHANT</span> <br />
+                    Welcome to my Portfolio
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm an IT Student,</p>
+                    <p>
+                        Hy Nishant Kumar Sagar is my name I am a techie who loves to take on challenges.
+                        Along with a good technical knowledge,
+                        I also posses ownership skills gained through various Leadership roles at my College UCET, VBU.
+                        I love solving problems.</p>
+                        <p>
+                        For more info, Please go through my Resume. </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>DSA</span><br>A crucial part of designing efficient software.</li>
+                            <li><span>Web Development</span><br>Web app development.</li>
+                            <li><span>Java Development</span><br>Proficiency in Java, with a good understanding of its ecosystem.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>0ct 2022 - Present</span><br>Internship at IIT Guwahati, Assam</li>
+                            <li><span>28 Feb - 28 March 2023 </span><br>Intern Crowd LLP</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 23</span><br>B.Tech from UCET, VBU (Hazaribag)</li>
+                            <li><span>2016 - 20</span><br>Diploma from GTRTC, (Dumka)</li>
+                            <li><span>2016</span><br>Matriculation from Kendriya Vidyalaya N0.3, (Bokaro)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="Projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>FLOOD MONITORING AND ALERTING SYSTEM BASED ON IOT.</h2>
+                    <p>This study is conducted to solve the problems brought about by floods. The device shall contain with the following features: It has ultrasonic sensor to sense the distance of water level of flood on the road. The system provided a camera that will display the real-time image of the flood that can view via livestream. It includes Serial Communication to send warning text message with the content of date, time, water level and road accessibility</p>
+                    <a href="link">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Amazon Clone</h2>
+                    <p>Amazon clone using HTML and CSS with the help of the excellent white-label e-commerce platform
+                        solution Amazon Clone Script, you can quickly and easily tap into a large worldwide customer base.
+                        Features aplenty, including Live Tracking, Lightning-fast checkout, price comparison, many payment
+                        options, etc..</p>
+                    <a href="https://github.com/nishantsgr09/Amazone-Clone/tree/main">GitHub</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Student Hub</h2>
+                    <p>The Student Hub project built in Spring Boot is a web-based platform designed to allow users to share
+                        content, discuss topics, and build communities. The project aims to replicate the core functionalities of
+                        the original Student platform, including user management, content management, moderation, search and
+                        discovery, notifications, and security and privacy features.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"><a href="mailto:j.nishantsgr09@gmail.com">nishantsgr09@gmail.com</a></i></p>
+                    <p><i class="fa-solid fa-square-phone-flip"><a href="tel:+919386437897">+91 9386437897</a></i></p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/nishant_k_kashyap/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/nishant-k-a892731a6/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my_cv.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Nishant Kr Sagar</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
